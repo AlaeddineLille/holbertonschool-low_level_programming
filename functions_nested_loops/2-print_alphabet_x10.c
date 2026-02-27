@@ -6,17 +6,18 @@
  * Return: nothing
  */
 
-void print_alphabet_x10(void);
-
+void print_alphabet_x10(void)
 {
-	int i;
+	int count = 0;
 	char letter;
 
-	if (i <= 'z')
+	while (count < 10)
 	{
-	_putchar(letter);
-	letter++;
-	else
-	_putchar('\n');
+		for (letter = 'a'; letter <= 'z'; letter++)
+		{
+			_putchar(letter);
+		}
+		_putchar('\n');
+		count++;
 	}
 }
