@@ -8,7 +8,13 @@
  * Return: The last digit
  */
 
-int print_last_digit(int num)
+int print_last_digit(int n)
 {
-	return (num % 10);
+    int last;
+
+    last = n % 10;
+    if (last < 0)
+        last = -last;
+    _putchar(last + '0');
+    return (last);
 }

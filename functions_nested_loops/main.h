@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int print_last_digit(int n);
 int _abs(int i);
 int _islower(int c);
 void print_alphabet_x10(void);
